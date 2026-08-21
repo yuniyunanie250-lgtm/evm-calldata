@@ -1,0 +1,19 @@
+[package]
+name = "evm-calldata"
+version = "0.1.0"
+edition = "2021"
+description = "Decode raw EVM calldata into a function selector and its 32-byte argument words"
+license = "MIT"
+repository = "https://github.com/yuniyunanie250-lgtm/evm-calldata"
+keywords = ["ethereum", "evm", "calldata", "abi", "cli"]
+categories = ["command-line-utilities", "cryptography::cryptocurrencies"]
+
+[[bin]]
+name = "evm-calldata"
+path = "src/main.rs"
+
+[lib]
+name = "evm_calldata"
+path = "src/lib.rs"
+
+[dependencies]
